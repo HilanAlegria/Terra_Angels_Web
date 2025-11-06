@@ -24,7 +24,7 @@ export function renderHeroSection() {
 
             <div class="hero-right-content">
                 <img 
-                    src="assets/images/terra-angels-logo-06.jpg" 
+                    src="assets/images/TERRA ANGELS COLORES-12.jpg" 
                     alt="Logo Terra Angels" 
                     class="hero-logo-large"
                 />

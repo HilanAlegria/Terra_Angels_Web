@@ -25,7 +25,7 @@ const team = [
   {
     name: "Valeria S.",
     role: "Jefa de Recaudación",
-    image: "assets/images/team/valeria.png"
+    image: "assets/images/team/Valeria.jpg"
   }
 ];
 

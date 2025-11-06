@@ -33,7 +33,7 @@ export const store = {
     // --- Datos de AboutSection.vue ---
     mission: {
         title: 'Nuestra Misión',
-        text: 'Rescatamos, rehabilitamos y reubicamos caninos en situación de abandono o maltrato en Cali. Nuestro objetivo es ser un puente de amor y esperanza, transformando vidas caninas y promoviendo la tenencia responsable.',
+        text: 'Rescatamos, rehabilitamos y reubicamos caninos en situación de abandono o maltrato en Cali. Nuestro objetivo es ser un puente de amor y esperanza, transformando vidas caninas y felinas y promoviendo la tenencia responsable.',
     },
     vision: {
         title: 'Nuestra Visión',
@@ -41,22 +41,22 @@ export const store = {
     },
     team: [
         // Se asumen rutas de imágenes estándar para la migración
-        { name: 'Rosa V.', role: 'Fundadora & Directora', bio: 'Veterinaria con 10 años de experiencia.', image: 'assets/images/rosa.jpg' },
-        { name: 'David C.', role: 'Coordinador de Adopciones', bio: 'Experto en comportamiento canino.', image: 'assets/images/david.jpeg' },
-        { name: 'Valeria S.', role: 'Jefa de Recaudación', bio: 'Apoya la sostenibilidad financiera.', image: 'assets/images/valeria.jpg' },
+        { name: 'Rosa V.', role: 'Fundadora & Directora', bio: 'Veterinaria con 10 años de experiencia.', image: 'assets/images/team/rosa.jpg' },
+        { name: 'David C.', role: 'Coordinador de Adopciones', bio: 'Experto en comportamiento canino.', image: 'assets/images/team/david.jpeg' },
+        { name: 'Valeria S.', role: 'Jefa de Recaudación', bio: 'Apoya la sostenibilidad financiera.', image: 'assets/images/tema/Valeria.jpg' },
     ],
 
     // --- Datos de ProgramsList.vue y ServicesView.vue ---
     impactPrograms: [
-        { id: 1, title: 'Rescate y Rehabilitación', description: 'Recuperamos perros de la calle, les brindamos atención médica completa y terapia de comportamiento.' },
-        { id: 2, title: 'Programa de Adopción', description: 'Conectamos a nuestros caninos rehabilitados con familias amorosas, garantizando un proceso seguro y responsable.' },
-        { id: 3, title: 'Apadrinamiento Canino', description: 'Permite a personas contribuir mensualmente al cuidado de un perro específico que espera un hogar.' }
+        { id: 1, title: 'Rescate y Rehabilitación', description: 'Recuperamos perros y gatos de la calle, les brindamos atención médica completa y terapia de comportamiento.' },
+        { id: 2, title: 'Programa de Adopción', description: 'Conectamos a nuestros animalitos rehabilitados con familias amorosas, garantizando un proceso seguro y responsable.' },
+        { id: 3, title: 'Apadrinamiento de Animales', description: 'Permite a personas contribuir mensualmente al cuidado de una mascota específico que espera un hogar.' }
     ],
     services: [
         { 
             id: 4, 
             title: 'Adiestramiento Básico', 
-            description: 'Clases de obediencia para perros de la comunidad, impartidas por expertos.'
+            description: 'Clases de obediencia para perros y gatos de la comunidad, impartidas por expertos.'
         },
         { 
             id: 5, 
@@ -65,8 +65,8 @@ export const store = {
         },
         { 
             id: 6, 
-            title: "Paseos Caninos Seguros y Educativos", 
-            description: "Paseos enfocados en la estimulación física y mental. Rutas seguras y tiempo de calidad. Contratando este servicio financias la esterilización de un perro en la comunidad cada mes.",
+            title: "Paseos Seguros y Educativos", 
+            description: "Paseos enfocados en la estimulación física y mental. Rutas seguras y tiempo de calidad. Contratando este servicio financias la esterilización de una mascota en la comunidad cada mes.",
         },
     ],
 
@@ -105,11 +105,21 @@ gallery: {
         { url: 'assets/images/gallery/amistad-perros.jpg', alt: 'Perros jugando en el pasto, símbolo de amistad.' }, 
         { url: 'assets/images/gallery/Trabajo-con-perros.jpg', alt: 'Voluntario celebrando el momento de una adopción exitosa.' },
         { url: 'assets/images/gallery/entrenamiento-perros.jpg', alt: 'Voluntarios de la fundación trabajando en equipo.' }, 
-        { url: 'assets/images/gallery/niño-con-perro.jpg', alt: 'Perro feliz en su nuevo hogar.' }, 
+        { url: 'assets/images/gallery/niño-con-perro.jpg', alt: 'Perro feliz en su nuevo hogar.' },
+        { url: 'assets/images/gallery/gatitos.jpg', alt: 'gatitos adorables.' },
+        { url: 'assets/images/gallery/amor animales.jpg', alt: 'El verdadero amor entre animales.' },
+        { url: 'assets/images/gallery/gatos.jpg', alt: 'Lindos gatos.' },
+        { url: 'assets/images/gallery/mascotas.jpg', alt: 'Nuestras lindas mascotas.' },
+        { url: 'assets/images/gallery/competencia-perros.jpg', alt: 'Perro feliz con su dueño.' },
+        { url: 'assets/images/gallery/amor de animales.jpg', alt: 'Rescate de un perro en situación de calle.' },
+        { url: 'assets/images/gallery/amor mascotas.jpg', alt: 'El verdaderoa amor entre tu mascotas.' },
+        { url: 'assets/images/gallery/diversion mascotas.jpg', alt: 'La autentica diversion de tus mascotas.' }
     ],
     videos: [
-        { src: 'assets/videos/recopilacion_ayuda_perros_niños.mp4', title: 'Historias felices 1: Rescate y amor' },
-        { src: 'assets/videos/perros-con-adultos.mp4', title: 'Historias felices 2: Adopciones exitosas' }
+        { src: 'assets/videos/animales jugando.mp4', title: 'Historias felices:' },
+        { src: 'assets/videos/perros jugando.mp4', title: 'Historias felices:'},
+        { src: 'assets/videos/perros-con-adultos.mp4', title: 'Historias felices:'},
+        { src: 'assets/videos/actividades con perros.mp4', title: 'Historias felices:'}
     ]
 }
 

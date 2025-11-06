@@ -57,7 +57,7 @@ export function renderContactContent() {
             <div class="contact-details">
                 <h3>Información Directa y Legal</h3>
                 <p>Teléfono: +57 300 555 1234 (Voluntariado)</p>
-                <p>Email: ayuda@terraangels.org</p>
+                <p>fundaterraangels@gmail.com</p>
                 <p>Horario de Oficina: Lunes a Viernes, 9:00 AM - 5:00 PM</p>
                 <p class="legal-note">Para reportar un caso de rescate, por favor llame al teléfono de emergencia.</p>
             </div>

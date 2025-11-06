@@ -15,7 +15,7 @@ export function renderServicesViewList(services) {
     return `
         <div class="services-view-content container">
             <h2 class="section-title">Nuestros <span class="text-accent">Servicios Comerciales</span></h2>
-            <p class="section-subtitle">Cada servicio que contratas financia directamente un rescate y el cuidado de un canino.</p>
+            <p class="section-subtitle">Cada servicio que contratas financia directamente un rescate y el cuidado de mascotas.</p>
             
             <div class="services-grid programs-grid">
                 ${servicesHTML}
