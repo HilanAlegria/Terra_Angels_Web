@@ -111,7 +111,7 @@ gallery: {
         { url: 'assets/images/gallery/gatos.jpg', alt: 'Lindos gatos.' },
         { url: 'assets/images/gallery/mascotas.jpg', alt: 'Nuestras lindas mascotas.' },
         { url: 'assets/images/gallery/competencia-perros.jpg', alt: 'Perro feliz con su dueño.' },
-        { url: 'assets/images/gallery/amor de animales.jpg', alt: 'Rescate de un perro en situación de calle.' },
+        { url: 'assets/images/gallery/Amor de animales.jpg', alt: 'Amor de animales.' },
         { url: 'assets/images/gallery/amor mascotas.jpg', alt: 'El verdaderoa amor entre tu mascotas.' },
         { url: 'assets/images/gallery/diversion mascotas.jpg', alt: 'La autentica diversion de tus mascotas.' }
     ],
