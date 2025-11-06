@@ -3,7 +3,7 @@
 // Datos de misión, visión y equipo
 const mission = {
   title: "Nuestra Misión",
-  text: "Rescatamos, rehabilitamos y reubicamos caninos en situación de abandono o maltrato en Cali. Nuestro objetivo es ser un puente de amor y esperanza, transformando vidas caninas y promoviendo la tenencia responsable."
+  text: "Rescatamos, rehabilitamos y reubicamos mascotas en situación de abandono o maltrato en Cali. Nuestro objetivo es ser un puente de amor y esperanza, transformando vidas caninas y felinas y promoviendo la tenencia responsable."
 };
 
 const vision = {

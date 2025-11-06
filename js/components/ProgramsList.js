@@ -50,7 +50,7 @@ export function renderProgramsList(impactPrograms, services) {
                 
                 <p class="section-description">
                     El ingreso generado por nuestros servicios financia directamente nuestros
-                    programas de rescate, rehabilitación y adopción de caninos.
+                    programas de rescate, rehabilitación y adopción de animales.
                 </p>
 
                 <!-- Programas de rescate -->

@@ -11,7 +11,7 @@ export const store = {
         "Voluntarios y Padrinos: Base fundamental para la operación y sostenibilidad."
       ],
       activities: [
-        "Rescate y Rehabilitación: Logística médica, conductual y emocional de caninos abandonados.",
+        "Rescate y Rehabilitación: Logística médica, conductual y emocional de animales abandonados.",
         "Gestión de Adopciones: Proceso riguroso de selección de familias y seguimiento post-adopción.",
         "Recaudación de Fondos y Eventos: Campañas para asegurar el sustento médico y alimenticio.",
         "Educación y Sensibilización: Charlas sobre tenencia responsable y bienestar animal."
