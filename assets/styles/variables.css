@@ -1,0 +1,20 @@
+:root {
+  /* Paleta de Colores de Terra Angels */
+  --color-primary-blue: #0D47A1;    /* Azul Profundo (Textos/Headers) */
+  --color-secondary-mint: #8BC34A;  /* Verde Menta (Fondos de Secciones) */
+  --color-accent-yellow: #FFC107;   /* Amarillo Solar (Acentos/CTAs) */
+  
+  /* Colores Neutrales */
+  --color-white: #ffffff;
+  --color-black: #2c3e50;
+
+  /* Tipografía y tamaños */
+  --font-family-primary: "Poppins", sans-serif;
+  --font-family-secondary: 'Open Sans', sans-serif;
+
+  /* Ejemplo de variables de espaciado y borde */
+  --border-radius: 8px;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Fundación Terra Angels</title>
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="assets/styles/variables.css">
+    <link rel="stylesheet" href="assets/styles/global-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* ============================
+           FORMULARIO DE CONTACTO
+        ============================ */
+        .contact-section {
+            background-color: var(--color-light-bg);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .contact-section h2.section-title {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+        }
+
+        .contact-section p {
+            font-size: 1.1em;
+            color: var(--color-dark-text);
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            background: var(--color-white);
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 25px;
+        }
+
+        .contact-form label {
+            display: block;
+            font-weight: 600;
+            color: var(--color-primary-blue);
+            margin-bottom: 8px;
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+            font-family: inherit;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            border-color: var(--color-primary-blue);
+            outline: none;
+        }
+
+        .contact-form textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--color-accent-yellow);
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: 700;
+            color: var(--color-dark-text);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #ffda6a;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            text-align: center;
+            color: var(--color-primary-blue);
+        }
+
+        .contact-info a {
+            color: var(--color-primary-blue);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .contact-form {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body class="contact-view">
+    
+    <div id="header-container"></div>
+
+    <main>
+        <section class="contact-section container">
+            <h2 class="section-title">Formulario de <span class="text-accent">Contacto y Colaboración</span></h2>
+            <p>¿Tienes dudas, deseas colaborar o apadrinar un peludito? Completa el siguiente formulario y te responderemos pronto.</p>
+
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="(opcional)">
+                </div>
+
+                <div class="form-group">
+                    <label for="motivo">Motivo de contacto *</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="apadrinamiento">Apadrinamiento</option>
+                        <option value="voluntariado">Voluntariado</option>
+                        <option value="donaciones">Donaciones</option>
+                        <option value="adiestramiento">Adiestramiento</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+
+                <button type="submit">
+                    <i class="fa-solid fa-paper-plane"></i> Enviar mensaje
+                </button>
+            </form>
+
+            <div class="contact-info">
+                <p>O si prefieres, escríbenos directamente:</p>
+                <p><a href="mailto:ayuda@terraangels.org">ayuda@terraangels.org</a></p>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script type="module" src="js/main.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("contactForm");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+
+            if (!data.nombre || !data.email || !data.mensaje) {
+                alert("Por favor completa los campos obligatorios.");
+                return;
+            }
+
+            try {
+                const submitBtn = form.querySelector("button");
+                submitBtn.disabled = true;
+                submitBtn.textContent = "Enviando...";
+
+                const response = await fetch("https://formspree.io/f/mjkpnrqv", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(data),
+                });
+
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Enviar mensaje';
+
+                if (response.ok) {
+                    alert("✅ ¡Gracias por contactarnos! Tu mensaje ha sido enviado correctamente.");
+                    form.reset();
+                } else {
+                    alert("❌ Ocurrió un error al enviar el mensaje. Inténtalo nuevamente.");
+                }
+            } catch (error) {
+                alert("⚠️ Error de conexión. Por favor, revisa tu red e inténtalo más tarde.");
+            }
+        });
+    });
+    </script>
+</body>
+</html>
